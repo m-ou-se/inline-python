@@ -34,7 +34,7 @@ fn run_and_capture(py: Python, code: PyObject) -> PyResult<String> {
 	let io = py.import("io")?;
 
 	let stdout = io.getattr("StringIO")?.call0()?;
-	let original_stdout = sys.dict().get_item("stdout");
+	let original_stdout = sys.dict().get_item("stdout")?;
 	sys.dict().set_item("stdout", stdout)?;
 
 	let result =

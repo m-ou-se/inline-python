@@ -17,4 +17,4 @@ path = "rust-fn.rs"
 
 [dependencies]
 inline-python = { path = ".." }
-pyo3 = "0.19"
+pyo3 = "0.20"

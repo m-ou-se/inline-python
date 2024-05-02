@@ -16,7 +16,7 @@ proc_macro = true
 [dependencies]
 proc-macro2 = { version = "1.0", features = ["span-locations"] }
 quote = "1.0"
-pyo3 = { version = "0.19", default-features = false, features = ["auto-initialize"] }
+pyo3 = { version = "0.20", default-features = false, features = ["auto-initialize"] }
 
 [target.'cfg(unix)'.dependencies]
 libc = "0.2.71"

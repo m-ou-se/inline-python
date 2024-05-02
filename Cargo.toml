@@ -14,7 +14,7 @@ autoexamples = false
 
 [dependencies]
 inline-python-macros = { version = "=0.12.0", path = "./macros" }
-pyo3 = { version = "0.19", default-features = false, features = ["auto-initialize"] }
+pyo3 = { version = "0.20", default-features = false, features = ["auto-initialize"] }
 
 [workspace]
 members = ["examples", "ct-python"]
